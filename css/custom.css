@@ -1,0 +1,183 @@
+/* General styles */
+body {
+    font-size: 15px;
+    line-height: 24px;
+    font-family: 'futura_ltbook', sans-serif;
+    color: #484848;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #484848;
+    font-family: 'futura_ltbold', sans-serif;
+}
+h1{font-size: 70px; margin:0; line-height: 72px;}
+h2 {font-size: 30px; margin: 0 0 20px;}
+h3 {font-size: 20px; margin: 0 0 10px;}
+img {width: 100%;}
+a,button{outline: 0 !important;}
+a:hover,a:focus{ text-decoration: none}
+
+/* All Transition */
+.list-inline.info a,.list-inline.social_icon a,nav.navbar.bootsnav ul.nav > li > a,.attr-nav > ul > li > a,.btn.know_btn,#filters > button,.portfolio_hover_area,.portfolio_hover_area .fa,.testimonial_content,.testimonial_content p:first-child::before,#contact_form .form-control,#contact_form .btn.submit_btn,footer a,.footer_social_icon .fa,.post .date,#scrollUp{
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+}
+
+/* Header */
+
+/* Carousel */
+.home .carousel {
+    position: relative;
+    height: 700px;
+    display: inline-block;
+}
+.home .carousel .item img{
+    width:100%;
+    height: 700px;
+}
+/*.carousel-inner > .item > a > img,
+.carousel-inner > .item > img {
+    height: 700px;
+}*/
+.carousel .overlay {
+    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0;
+}
+.carousel-caption {
+    left: 7%;
+    right: 7%;
+    top: 70px;
+}
+.carousel-caption h1 {
+    color: #fff;
+    margin-bottom:20px;
+}
+.carousel-caption h1.second_heading {
+    color:hsl(305, 100%, 53%);
+    margin-bottom:35px;
+}
+.carousel-caption > h3 {
+    color: #fff;
+    font-family: "futura_ltbook",sans-serif;
+    font-size: 40px;
+    font-weight: normal;
+    margin-bottom: 30px;
+    text-transform: inherit;
+}
+.carousel-caption > p {
+    font-size: 23px;
+    line-height: 28px;
+}
+.btn.know_btn {
+    background: hsl(308, 100%, 53%) none repeat scroll 0 0;
+    border-radius: 30px;
+    color: #fff;
+    font-family: "futura_ltbold",sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border:1px solid transparent;
+}
+.carousel-caption .btn.know_btn {
+    margin-top: 64px;
+}
+.carousel-caption .btn.know_btn:last-child {
+    margin-left: 20px;
+}
+.btn.know_btn:hover,
+.btn.know_btn:focus {
+    background: transparent;
+    color:hsl(303, 100%, 53%);
+    border:1px solid hsl(300, 100%, 53%);
+}
+
+
+
+
+.carousel-control{
+    width:50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-top:-25px;
+    top:50%;
+}
+
+@media (max-width: 479px) {
+    h1 {
+        font-size: 30px;
+        line-height: 32px;
+    }
+    h3 {
+        font-size: 17px;
+    }
+    .list-inline.info {
+        margin-bottom: 10px;
+        text-align: center;
+        width: 100%;
+    }
+    .list-inline.info > li {
+        padding: 0 8px;
+    }
+    .list-inline.social_icon {
+        text-align: center;
+        width: 100%;
+        padding: 0 8px;
+    }
+    .carousel-inner > .item > a > img, .carousel-inner > .item > img {
+        height: 420px;
+    }
+    .carousel-caption {
+        top: 5px;
+    }
+    .carousel-caption h1.second_heading {
+        margin-bottom: 10px;
+    }
+    .carousel-caption > h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .carousel-caption > p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .btn.know_btn {
+        font-size: 14px;
+        padding: 8px 14px;
+    }
+    .carousel-caption .btn.know_btn {
+        margin-top: 10px;
+    }
+    .carousel-caption .btn.know_btn:last-child {
+        margin-left: 10px;
+    }
+    .about_content > h3 {
+        font-size: 24px;
+    }
+    .about_banner > img {
+        width: 100%;
+    }
+    #filters > button {
+        font-size: 14px;
+    }
+    .grid-item {
+        width:100%;
+    }
+    .grid-item--height2 { height: 255px !important;}
+    .grid-item--width2 .portfolio_hover_area .fa {
+        margin-top: 90px;
+    }
+    .list-inline.footer_social_icon > li {
+        padding: 8px 3px;
+    }
+
+
+}
